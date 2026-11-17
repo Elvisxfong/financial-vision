@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>財務視界｜制度試算填寫教學</title>
+<style>
+  body { margin: 0; color: #132b3e; background: #f3f7f8; font: 1.1rem/1.65 system-ui, sans-serif; }
+  .guide-page { box-sizing: border-box; max-width: 980px; margin: 0 auto; padding: clamp(18px, 5vw, 56px); }
+  .guide-page h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.15; }
+  .guide-page h2 { margin-top: 0; font-size: 1.3rem; }
+  .guide-page a { color: #12546b; text-decoration: underline; text-underline-offset: .18em; }
+  .guide-page nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+  .guide-page nav a { padding: .4rem .65rem; border-radius: .5rem; background: #e5eef0; }
+  .guide-page section { padding: clamp(14px, 4vw, 28px); margin-top: 1.15rem; border: 1px solid #d7e2e7; border-radius: .85rem; background: white; }
+  .guide-panels > article { display: none; scroll-margin-top: 1rem; }
+  .guide-panels > article:first-child, .guide-panels > article:target { display: block; }
+  .guide-panels:has(> article:target) > article:not(:target) { display: none; }
+  .guide-example + .guide-example { border-top: 1px solid #d7e2e7; margin-top: 1rem; }
+  .guide-table { overflow-x: auto; }
+  .guide-table table { width: 100%; min-width: 28rem; border-collapse: collapse; }
+  .guide-table th, .guide-table td { padding: .55rem; text-align: left; border-bottom: 1px solid #d7e2e7; }
+  .guide-table small { display: block; }
+  .guide-formula { white-space: pre-line; }
+  .guide-result { color: #105b54; font-size: 1.2rem; font-weight: 750; }
+</style>
+</head>
+<body><main class="guide-page">
+<nav aria-label="選擇制度教學"><a href="#labor">勞保老年年金</a><a href="#national">國保老年年金</a><a href="#public">公保養老年金</a><a href="#military">軍保退伍給付</a><a href="#laborAccount">勞退新制月退</a><a href="#laborLegacy">勞退舊制</a><a href="#publicPension">公務／公校退撫</a><a href="#militaryPension">軍人退撫</a><a href="#privateSchoolPension">私校退撫</a><a href="#farmerAccount">農民退休儲金</a><a href="#farmerAllowance">老農津貼</a></nav>
+<div class="guide-panels"><article id="labor">
+    <header><h1>勞保老年年金</h1><p>勞保是社會保險；不要把勞退個人專戶餘額填進投保薪資。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>本人出生年次與法定請領年齡</li><li>加保期間最高 60 個月平均月投保薪資</li><li>官方可採計保險年資</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>查自己的投保薪資與年資</strong><p>登入勞保局 e 化服務，查看投保紀錄及老年給付試算。平均月投保薪資不是實領薪水，也不是直接取最後一個月。</p></li><li><strong>依序填入兩個數字</strong><p>在「平均月投保金額」填 45800、「有效保險年資」填 28。這是完整 28 年範例；有月份時先依官方可採計年資核對，不能把 28 年 6 個月填成 28.6。</p></li><li><strong>選擇相對法定年齡</strong><p>範例選「法定年齡」。要比較提前或延後，改這個選單；法定年齡依出生年次與適用條件確認，不是所有人都固定一個年齡。</p></li><li><strong>比較兩式並核對結果</strong><p>先比較兩種公式，再套請領時點的增減比例。相同薪資、年資假設下，提前 2 年為原額 × 92%；延後 2 年為原額 × 108%。實際持續加保還會改變年資。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>28 年、法定年齡請領</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">平均月投保金額</th>
+      <td>45800</td>
+      <td>勞保局最高 60 個月平均月投保薪資<small>單位是元／月；不要填成 4.58。</small></td>
+    </tr>
+  
+    <tr>
+      <th scope="row">有效保險年資</th>
+      <td>28</td>
+      <td>勞保局可採計年資<small>完整 28 年，不含額外月份。</small></td>
+    </tr>
+  
+    <tr>
+      <th scope="row">相對法定年齡</th>
+      <td>法定年齡</td>
+      <td>依出生年次查官方請領年齡表</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">第 1 式：45,800 × 28 × 0.775% ＋ 3,000 ＝ 12,938.6
+第 2 式：45,800 × 28 × 1.55% ＝ 19,877.2
+兩式擇優，本例沒有提前／延後調整。</p>
+      <p class="guide-result">19,877 元／月</p>
+      <p>畫面金額四捨五入至元；實際資格、年資與核定額以勞保局為準。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>用目前實領薪水代替平均投保薪資。</li><li>把勞保與勞退當成同一筆收入。</li><li>提前請領後，以為日後會自動回復成全額。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.bli.gov.tw/0019825.html" target="_blank" rel="noopener noreferrer">勞保老年年金｜給付與提前／展延規則</a></li><li><a href="https://edesk.bli.gov.tw/" target="_blank" rel="noopener noreferrer">勞保局 e 化服務｜本人資料查詢</a></li></ul>
+    </section>
+  </article><article id="national">
+    <header><h1>國保老年年金</h1><p>國保以法定月投保金額計算，不是輸入自己的工作薪水；本系統不需手動填月投保金額。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>國保可採計年資與繳費紀錄</li><li>是否符合 A 式排除條件</li><li>其他社會保險老年給付及福利津貼資料</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>查已繳費可採計年資</strong><p>由本人查國保年資與欠費紀錄。不要把勞保年資直接加入本欄，也不要把未確定可採計的欠費期間算進去。</p></li><li><strong>填年資，辨識固定參數</strong><p>範例在「有效保險年資」填 20。主試算目前仍會顯示共用「平均月投保金額」欄，但國保計算不讀取它；115 年本系統採 21,103 元。</p></li><li><strong>先確認 A 式資格再勾選</strong><p>「通過 A 式排除條件檢核」不是想領較多就勾選。先依官方條件核對欠費、其他給付等資料；不符合時只比較可適用的 B 式。</p></li><li><strong>核對月額與開始時間</strong><p>範例假設已滿 65 歲且可採 A 式。先比 A、B 式，再把自己的實際請領起始時間與結果交由勞保局確認。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>20 年、假設可採 A 式</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">有效保險年資</th>
+      <td>20</td>
+      <td>國保已繳費、可採計年資</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">通過 A 式排除條件檢核</th>
+      <td>勾選（僅本例假設）</td>
+      <td>勞保局 A 式排除條件及本人給付紀錄<small>沒有核對前，不要照範例勾選。</small></td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">115 年固定月投保金額 21,103 元。
+A 式：21,103 × 20 × 0.65% ＋ 4,049 ＝ 6,792.39
+B 式：21,103 × 20 × 1.3% ＝ 5,486.78</p>
+      <p class="guide-result">6,792 元／月</p>
+      <p>不符 A 式條件時，本例 B 式約 5,487 元／月。不是同時領取 A＋B。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>把 A 式資格勾選當成自由選擇。</li><li>把勞保與國保的年資合併後，全部拿來算國保金額。</li><li>在共用薪資欄填自己的薪水，以為會改變國保月額。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.bli.gov.tw/0100410.htm" target="_blank" rel="noopener noreferrer">國保官方試算｜參數與 A／B 式資格</a></li><li><a href="https://edesk.bli.gov.tw/" target="_blank" rel="noopener noreferrer">勞保局 e 化服務｜本人資料查詢</a></li></ul>
+    </section>
+  </article><article id="public">
+    <header><h1>公保養老年金</h1><p>公保養老給付與公務／公校退撫分屬不同制度；是否能領年金、採哪個年金率須先由人事核對。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>公保平均保險俸（薪）額</li><li>公保可採計年資</li><li>初次加保日期</li><li>人事核對的給付方式與年金率</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>請人事確認可否採年金</strong><p>先取得公保養老給付試算表，確認身分、給付方式、退休給與限制與年金率。本頁數字不能取代這項資格確認。</p></li><li><strong>填公保平均保俸與年資</strong><p>範例填平均保險俸（薪）額 45800、有效保險年資 30；不是把整份薪資單含加給的總薪資填入。</p></li><li><strong>選年金率與初保身分</strong><p>範例選基本年金率 0.75%，112 年 7 月 1 日後初次加保不勾選。實際年金率應按人事／臺銀核對結果，不要直接保留畫面預設的 1.30%。</p></li><li><strong>核對請領時點與限制</strong><p>範例相對法定起支年齡選全額。提前或展期先確認資格；還要核對退休所得上限、超額年金及其他退休給與。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>基本年金率的算式示意</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">平均保險俸（薪）額</th>
+      <td>45800</td>
+      <td>人事單位公保試算表</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">有效保險年資</th>
+      <td>30</td>
+      <td>公保加保明細</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">相對法定起支年齡</th>
+      <td>法定起支年齡（全額）</td>
+      <td>本人出生及退保資料、人事核對</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">核定年金率</th>
+      <td>基本年金率 0.75%</td>
+      <td>臺銀／人事單位確認的適用年金率</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">112 年 7 月 1 日後初次參加公保</th>
+      <td>不勾選（本例）</td>
+      <td>初次加保日期</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">45,800 × 30 × 0.75% ＝ 10,305</p>
+      <p class="guide-result">10,305 元／月</p>
+      <p>僅示範欄位與算式；沒有證明本例身分一定可領此年金，亦未完整核定其他退休給與限制。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>把公保與退撫的平均俸額、年資混在一起。</li><li>未確認就選最高年金率。</li><li>把「延後」理解成一定比全額多領固定百分比。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.bot.com.tw/Images/File/GetFileId/f3eee51e-3d4e-4a36-a778-1c3470cc28c2" target="_blank" rel="noopener noreferrer">臺灣銀行｜公保養老年金請領書及背面說明</a></li></ul>
+    </section>
+  </article><article id="military">
+    <header><h1>軍保退伍給付</h1><p>這裡算軍人保險的一次退伍給付；不是「軍人退撫」每月退休俸。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>軍保有效保險年資</li><li>最後月份繳費標準</li><li>退伍原因與給與審定資料</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先確認選對制度</strong><p>若想估每月退休俸，請改看「軍人退撫」。本頁軍保是按保險繳費標準與年資基數估一次給付。</p></li><li><strong>向人事取得兩項資料</strong><p>查最後月份繳費標準及軍保有效年資。不要用實領總薪資、職務加給或個人專戶金額代替繳費標準。</p></li><li><strong>照範例填 45800 與 20</strong><p>「最後月份繳費標準」填 45800、「有效保險年資」填 20。45,800 元只是本例假設，不表示任何軍階的公告標準。</p></li><li><strong>看一次金，不看成月收入</strong><p>20 年本例為 35 個基數。核對後回原分頁套用，應建立一次金資料；未滿 5 年與特殊原因須另查退費或法定條件。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>20 年軍保的一次給付示意</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">最後月份繳費標準</th>
+      <td>45800</td>
+      <td>所屬單位人事／軍保繳費紀錄<small>假設金額，不是軍階薪俸表。</small></td>
+    </tr>
+  
+    <tr>
+      <th scope="row">有效保險年資</th>
+      <td>20</td>
+      <td>軍保可採計保險年資<small>不能只憑入伍日至退伍日自行推定全部可採。</small></td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">前 5 年：5 基數
+第 6–10 年：5 × 1 ＝ 5 基數
+第 11–15 年：5 × 2 ＝ 10 基數
+第 16–20 年：5 × 3 ＝ 15 基數
+合計 35 基數；45,800 × 35 ＝ 1,603,000</p>
+      <p class="guide-result">1,603,000 元／一次給付</p>
+      <p>整年年資的入門範例。畸零期間、曾領給付、退伍原因與實際審定結果另行核對。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>想算月退，卻選了軍保退伍給付。</li><li>把總薪資代替最後月份繳費標準。</li><li>把一次金同時再當作每月退休收入。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://law.mnd.gov.tw/scp/Query1B.aspx?lawno=16&amp;no=1A005702601" target="_blank" rel="noopener noreferrer">國防法規資料庫｜軍人保險條例第 16 條</a></li></ul>
+    </section>
+  </article><article id="laborAccount">
+    <header><h1>勞退新制月退</h1><p>以勞退個人專戶本金＋收益換算月額，與勞保年金的投保薪資公式不同。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>勞退新制專戶本息合計</li><li>實際提繳年資及月領資格</li><li>申請年齡</li><li>該年齡適用的期初年金現值因子</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先查專戶本息</strong><p>由本人登入官方專戶查詢，取得本金與累積收益合計。不要填每月薪資，也不要只填自己已繳的本金。</p></li><li><strong>確認申請年齡與資格</strong><p>輸入實際申請年齡，並向承辦單位核對請領資格、可選給付方式與年資條件。</p></li><li><strong>找對年金現值因子</strong><p>打開官方計算基礎及附件，找申請年齡對應的參數。年金現值因子不是報酬率，也不是希望領取幾年；改年齡時必須重新核對。</p></li><li><strong>核對月額再套用</strong><p>本頁用專戶總額 ÷ 因子 ÷ 12 示意月額。與官方試算結果核對後，再回原分頁選家庭成員並套用；月退休金資格不能只靠本頁三個欄位判定。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>看懂三個欄位的假設案例</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">個人專戶本金及累積收益</th>
+      <td>2680000</td>
+      <td>勞保局勞退新制專戶明細<small>268 萬元輸入 2680000，不是 268。</small></td>
+    </tr>
+  
+    <tr>
+      <th scope="row">預計申請年齡</th>
+      <td>60</td>
+      <td>預計申請日期與出生日期</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">期初年金現值因子</th>
+      <td>20（教學假設）</td>
+      <td>勞保局月退休金計算基礎附件／官方試算<small>這裡的 20 只是教學假設，不是公告值。實際輸入須查申請年齡、生命表與利率對應的官方因子；不確定時先查官方試算或詢問承辦單位。</small></td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">只為說明欄位，假設因子＝20：
+2,680,000 ÷ 20 ÷ 12 ＝ 11,166.67</p>
+      <p class="guide-result">11,167 元／月（假設因子）</p>
+      <p>這裡的 20 只是教學假設，不是公告值。實際輸入須查申請年齡、生命表與利率對應的官方因子；不確定時先查官方試算或詢問承辦單位。 勞退新制月退休金通常還須實際提繳年資滿 15 年；未滿時不能僅因算出月額就認定可月領。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>以目前薪資代替專戶累積本息。</li><li>將勞保投保年資當作勞退實際提繳年資。</li><li>改申請年齡後仍沿用舊年齡的因子。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.bli.gov.tw/0018437.html" target="_blank" rel="noopener noreferrer">勞保局｜月退休金計算基礎與附件</a></li><li><a href="https://www.bli.gov.tw/0005595.html" target="_blank" rel="noopener noreferrer">勞退新制請領規定</a></li><li><a href="https://edesk.bli.gov.tw/" target="_blank" rel="noopener noreferrer">勞保局 e 化服務｜本人資料查詢</a></li></ul>
+    </section>
+  </article><article id="laborLegacy">
+    <header><h1>勞退舊制</h1><p>由雇主依適用舊制的年資與平均工資核給一次退休金，不是勞退新制個人專戶。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>同一事業單位適用舊制年資</li><li>核准退休時平均工資</li><li>退休資格及是否適用職災強制退休加給</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先確認退休資格與舊制期間</strong><p>向雇主核對同一事業單位的年資及保留舊制期間；改選新制之後的期間不能重複算成舊制年資。</p></li><li><strong>填平均工資與適用舊制年資</strong><p>範例在「核准退休時一個月平均工資」填 60000、年資填 20。平均工資應依法律與雇主明細確認，不一定等於底薪。</p></li><li><strong>判斷職災加給欄位</strong><p>本例未勾選職災強制退休。只有符合該欄所列法定原因時才可勾選，不能因工作辛苦或有疾病就勾選。</p></li><li><strong>數基數、對一次金</strong><p>本例前 15 年共 30 基數，後 5 年共 5 基數。用官方試算與雇主明細核對；跨勞基法適用期間與畸零年資另查。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>20 年舊制年資</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">核准退休時一個月平均工資</th>
+      <td>60000</td>
+      <td>雇主退休金明細及平均工資計算資料</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">同一事業單位適用舊制工作年資</th>
+      <td>20</td>
+      <td>雇主核對的舊制年資</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">職災強制退休加給</th>
+      <td>不勾選（本例）</td>
+      <td>退休原因及認定文件</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">15 × 2 ＋ 5 × 1 ＝ 35 基數
+60,000 × 35 ＝ 2,100,000</p>
+      <p class="guide-result">2,100,000 元／一次給付</p>
+      <p>本例假設全部 20 年均適用此給付標準且已符合退休資格；特殊及跨法適用期間另核。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>把所有工作的年資全部加在同一雇主舊制欄。</li><li>把最後月薪直接當成已核對的平均工資。</li><li>舊制一次金與同一筆已領資產重複列入模型。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.mol.gov.tw/1607/28162/28540/28542/28546/30449/" target="_blank" rel="noopener noreferrer">勞動部｜退休金給付標準</a></li><li><a href="https://calcr2.mol.gov.tw/labor_retire/" target="_blank" rel="noopener noreferrer">勞動部｜勞退舊制試算</a></li></ul>
+    </section>
+  </article><article id="publicPension">
+    <header><h1>公務／公校退撫</h1><p>先選公務或公校身分，再分確定給付與 112 年 7 月後初任個人專戶；公保另在「公保養老年金」試算。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>初任日期與身分</li><li>新舊制可採計年資</li><li>人事提供的退休計算平均本（年功）俸薪額</li><li>個人專戶制者的本息與給付選擇</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先問人事：我適用哪種制度？</strong><p>選公務人員或公立學校教職員，再選制度版本。不能只憑自己現在年齡判斷適用新制或專戶制。</p></li><li><strong>確定給付：分開填前、後年資</strong><p>例一選公務人員、112 年 6 月前既有人員、月退休金，填平均俸額 45800、退撫新制前 0 年、新制後 28 年。這是簡化的全新制年資案例。</p></li><li><strong>個人專戶：改填專戶而非平均俸額</strong><p>例二改選 112 年 7 月後初任／個人專戶，填專戶總額 2680000、申請年齡 65；一次或攤提月額的欄位會不同。現值因子須向官方及承辦人確認。</p></li><li><strong>核對起支年齡與所得限制</strong><p>算式示意沒有完整核定退休資格、所得替代率上限或過渡規則。公校／公務舊年資分界也不同，應以人事正式試算表確認後再套用。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>例一｜公務人員・全退撫新制年資</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">適用身分</th>
+      <td>公務人員</td>
+      <td>人事身分資料</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">制度版本</th>
+      <td>112 年 6 月前既有人員／確定給付</td>
+      <td>初任與適用制度紀錄</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">領取方式</th>
+      <td>月退休金／攤提給付</td>
+      <td>本人選擇及人事核對</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">退休計算平均本（年功）俸薪額</th>
+      <td>45800</td>
+      <td>人事提供的適用平均俸額，非實領總薪資</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">退撫新制實施前年資</th>
+      <td>0</td>
+      <td>人事核定年資</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">退撫新制實施後年資</th>
+      <td>28</td>
+      <td>人事核定年資</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">相對法定起支年齡</th>
+      <td>法定起支年齡（全額）</td>
+      <td>人事核定起支時間</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">本系統此簡化分段算式：
+45,800 × 2 ×（28 × 2%）＝ 51,296</p>
+      <p class="guide-result">51,296 元／月（算式示意）</p>
+      <p>僅示範全新制年資的輸入與原始算式；尚未完整適用個案所得上限等核減，不是可領金額保證。公校身分仍須改選並重新查核。</p>
+    </div>
+  
+    <div class="guide-example">
+      <h3>例二｜112 年 7 月後初任・專戶攤提示意</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">制度版本</th>
+      <td>112 年 7 月後初任／個人專戶</td>
+      <td>初任人事資料</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">領取方式</th>
+      <td>月退休金／攤提給付</td>
+      <td>本例假設選攤提方式</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">個人專戶累積總額</th>
+      <td>2680000</td>
+      <td>本人專戶本息</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">預計申請年齡</th>
+      <td>65</td>
+      <td>本例預計申請年齡</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">年金現值因子</th>
+      <td>20（教學假設）</td>
+      <td>承辦單位提供的適用參數<small>這裡的 20 只是教學假設，不是公告值。實際輸入須查申請年齡、生命表與利率對應的官方因子；不確定時先查官方試算或詢問承辦單位。</small></td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">假設因子＝20：2,680,000 ÷ 20 ÷ 12 ＝ 11,166.67</p>
+      <p class="guide-result">11,167 元／月（攤提假設）</p>
+      <p>這裡的 20 只是教學假設，不是公告值。實際輸入須查申請年齡、生命表與利率對應的官方因子；不確定時先查官方試算或詢問承辦單位。 本頁只示意一種攤提方式；不是所有專戶給付方式的通用月額。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>把公保與退撫當成同一筆給付。</li><li>把全部年資填在新制前與新制後兩個欄位各一次。</li><li>把112年後初任專戶制套入既有人員百分比公式。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://law.exam.gov.tw/LawContent.aspx?id=FL085768" target="_blank" rel="noopener noreferrer">考試院法規｜公務人員退休資遣撫卹法</a></li><li><a href="https://edu.law.moe.gov.tw/LawContent.aspx?id=GL001661&amp;media=print" target="_blank" rel="noopener noreferrer">教育部法規｜公立學校教職員退休資遣撫卹條例</a></li><li><a href="https://www.fund.gov.tw/cp.aspx?n=3357" target="_blank" rel="noopener noreferrer">退撫基金管理局｜個人專戶制介紹</a></li></ul>
+    </section>
+  </article><article id="militaryPension">
+    <header><h1>軍人退撫</h1><p>這裡比較軍人退休俸與一次退伍金；軍保一次給付應另外查，不能把兩者的薪俸基礎混用。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>軍官或士官身分</li><li>服現役可採計年資</li><li>月俸所用最後五分之一年資平均本俸</li><li>一次金所用退伍時本俸</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>選身分與領取方式</strong><p>範例先選軍官、退休俸。請人事確認服役與退伍條件；本頁不替代資格審定。</p></li><li><strong>填本俸與服役年資</strong><p>月俸範例填最後五分之一服役年資平均本俸 50000、服現役年資 25。50000 是未加倍前的本俸，不是含加給總薪資。</p></li><li><strong>看懂月俸算式</strong><p>本例滿 20 年按 55%，多 5 年再加 10%，共 65%。系統會將本俸加一倍，不要自己先填 100000。</p></li><li><strong>改一次金時重查本俸基礎</strong><p>選一次退伍金後，欄位變成「退伍時本俸」，不是原來的平均本俸。新舊制、特殊退伍與其他加給由人事逐案確認，不把簡式視為全部給付。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>軍官服役 25 年・退休俸示意</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">身分類別</th>
+      <td>軍官</td>
+      <td>人事／兵籍資料</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">領取方式</th>
+      <td>退休俸</td>
+      <td>退伍給與選擇及資格</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">最後五分之一服役年資平均本俸</th>
+      <td>50000</td>
+      <td>人事核算的平均本俸（未加倍）</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">服現役年資</th>
+      <td>25</td>
+      <td>可採計服現役年資</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">俸率：55% ＋（25 − 20）× 2% ＝ 65%
+50,000 × 2 × 65% ＝ 65,000</p>
+      <p class="guide-result">65,000 元／月（算式示意）</p>
+      <p>僅示範一般公式。舊制年資、特殊退伍、補償及最低保障等不在此簡例內。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>把軍保最後月份繳費標準填進退撫平均本俸。</li><li>先把本俸加倍再輸入，造成系統又加倍一次。</li><li>由月俸改一次金時，沒有重新確認適用薪俸基礎。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://law.mnd.gov.tw/scp/Query1R.aspx?lawno=46&amp;media=1&amp;no=1A004702604&amp;tblname=Flrela" target="_blank" rel="noopener noreferrer">國防法規資料庫｜服役條例第 26 條相關給與基準</a></li></ul>
+    </section>
+  </article><article id="privateSchoolPension">
+    <header><h1>私校退撫</h1><p>98 年底前舊制給與與 99 年起專戶本息分開填，再比較一次與分期現金流。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>98 年底前可採計年資（年、月）</li><li>退休時最後本（年功）薪</li><li>99 年起個人專戶本息</li><li>分期選擇與實際提領規劃</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先分開兩段資料</strong><p>向學校人事確認98年底前舊制年資，另查99年起專戶本息；同一筆累積金額不要重複列在兩邊。</p></li><li><strong>依範例填最後薪額與年、月</strong><p>最後本（年功）薪填50000，舊制年資「年」填12、「月」填6。這裡有分開的月欄，不要在年欄填12.6。</p></li><li><strong>填專戶本息並看一次金</strong><p>專戶本息填2680000，先選一次給付。系統將舊制給與與新制本息合計；930元由公式處理，不用加在輸入薪額。</p></li><li><strong>再比較分期示意</strong><p>若改選定期給付，範例將100%轉入、以20年平均分攤。實際分期金額由本人選擇與專戶餘額決定，不能把本頁平均月額當作保證年金。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>12 年 6 個月舊年資＋268 萬元專戶</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">領取方式</th>
+      <td>一次給付</td>
+      <td>本例先比較一次金</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">退休時最後本（年功）薪</th>
+      <td>50000</td>
+      <td>學校人事提供的最後本薪</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">98 年底前舊制年資－年</th>
+      <td>12</td>
+      <td>人事核對的舊制年資</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">舊制年資－月</th>
+      <td>6</td>
+      <td>同一份年資紀錄</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">99 年起個人專戶本息</th>
+      <td>2680000</td>
+      <td>私校儲金個人專戶明細</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">本例舊制 24 基數：
+（50,000 ＋ 930）× 24 ＝ 1,222,320
+1,222,320 ＋ 2,680,000 ＝ 3,902,320</p>
+      <p class="guide-result">3,902,320 元／一次給付</p>
+      <p>若100%轉入分期專戶、假設無投資損益、平均20年：3,902,320 ÷ 20 ÷ 12，約16,260元／月。實際分期方式及餘額變化另核。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>12年6個月填成12.6年。</li><li>手動加930後系統又再加一次。</li><li>一次金全部列資產，卻又把同一筆分期收入完整重複加入。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www1.t-service.org.tw/retire/detail/461/31115" target="_blank" rel="noopener noreferrer">私校退撫儲金管理會｜退休金試算與舊制範例</a></li><li><a href="https://www1.t-service.org.tw/qa/446" target="_blank" rel="noopener noreferrer">私校退撫儲金管理會｜分期請領問答</a></li></ul>
+    </section>
+  </article><article id="farmerAccount">
+    <header><h1>農民退休儲金</h1><p>農退儲金來自個人專戶；老農津貼另有資格審查，兩者不是同一個制度。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>農退專戶本金及累積收益</li><li>預計申請年齡</li><li>適用生命表與利率所對應的年金因子</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先查專戶本息</strong><p>由本人登入官方專戶查詢，取得本金與累積收益合計。不要填每月薪資，也不要只填自己已繳的本金。</p></li><li><strong>確認申請年齡與資格</strong><p>輸入實際申請年齡，並向承辦單位核對請領資格、可選給付方式與年資條件。</p></li><li><strong>找對年金現值因子</strong><p>打開官方計算基礎及附件，找申請年齡對應的參數。年金現值因子不是報酬率，也不是希望領取幾年；改年齡時必須重新核對。</p></li><li><strong>核對月額再套用</strong><p>本頁用專戶總額 ÷ 因子 ÷ 12 示意月額。與官方試算結果核對後，再回原分頁選家庭成員並套用；月退休金資格不能只靠本頁三個欄位判定。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>120 萬元農退專戶・攤提示意</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">個人專戶本金及累積收益</th>
+      <td>1200000</td>
+      <td>本人農退專戶明細</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">預計申請年齡</th>
+      <td>65</td>
+      <td>預計申請日期與本人年齡</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">期初年金現值因子</th>
+      <td>20（教學假設）</td>
+      <td>農退適用生命表、利率與官方計算資料<small>這裡的 20 只是教學假設，不是公告值。實際輸入須查申請年齡、生命表與利率對應的官方因子；不確定時先查官方試算或詢問承辦單位。</small></td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">假設因子＝20：
+1,200,000 ÷ 20 ÷ 12 ＝ 5,000</p>
+      <p class="guide-result">5,000 元／月（假設因子）</p>
+      <p>這裡的 20 只是教學假設，不是公告值。實際輸入須查申請年齡、生命表與利率對應的官方因子；不確定時先查官方試算或詢問承辦單位。 農退與勞退的適用參數不可直接互相代用；首期與後續核發仍以官方資料為準。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>把老農津貼金額當作農退專戶餘額。</li><li>直接照填勞退的年金因子。</li><li>只憑專戶總額就認定每年每月都固定領相同金額。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.bli.gov.tw/0105043.html" target="_blank" rel="noopener noreferrer">勞保局｜農民月退休儲金計算說明</a></li><li><a href="https://www.bli.gov.tw/0105045.html" target="_blank" rel="noopener noreferrer">農退請領標準</a></li><li><a href="https://edesk.bli.gov.tw/" target="_blank" rel="noopener noreferrer">勞保局 e 化服務｜本人資料查詢</a></li></ul>
+    </section>
+  </article><article id="farmerAllowance">
+    <header><h1>老農津貼</h1><p>福利津貼採資格檢核，不是年資越多就按比例增加的個人退休專戶。</p></header>
+    <section>
+      <h2>準備資料</h2><ul><li>年齡、農保年資與加保時點</li><li>最近3年在臺居住資料</li><li>法定年度所得、土地房屋資料</li><li>其他津貼與社會保險老年給付紀錄</li></ul>
+      <h2>逐步填寫</h2><ol><li><strong>先填農保年資與加保時點</strong><p>本例農保18年，已滿65歲；本例不使用103年7月17日前持續加保的半額例外。該例外須另核，不能只勾選就取得資格。</p></li><li><strong>逐項核對，不要全部照勾</strong><p>年齡、居住、所得、財產、其他津貼及社會保險老年給付，都必須按本人資料與法定例外核對。本例僅假設各項檢核均通過。</p></li><li><strong>看「資格初步通過」與金額</strong><p>範例顯示現行全額8,110元／月；若任一條件未通過，先查原因。未核定前不能因畫面顯示金額就認定一定可領。</p></li><li><strong>向農漁會／勞保局確認</strong><p>由承辦單位確認財稅資料年度、法定排除項目與給付例外。條件有變動時重新檢核，不直接套用其他人的資格。</p></li></ol>
+    </section>
+    <section><h2>欄位範例與結果驗算</h2>
+    <div class="guide-example">
+      <h3>假設全部條件通過的全額案例</h3>
+      <div class="guide-table">
+        <table>
+          <thead><tr><th scope="col">欄位</th><th scope="col">輸入範例</th><th scope="col">資料來源</th></tr></thead>
+          <tbody>
+    <tr>
+      <th scope="row">農保年資</th>
+      <td>18</td>
+      <td>農保加保年資紀錄</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">103 年 7 月 17 日以前已加農保且持續加保</th>
+      <td>不勾選（本例不採半額例外）</td>
+      <td>加保時點與是否持續加保紀錄</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">已滿 65 歲</th>
+      <td>勾選（本例）</td>
+      <td>本人年齡</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">最近 3 年每年在臺居住超過 183 日</th>
+      <td>勾選（假設已核對）</td>
+      <td>官方居住日數檢核</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">農業所得外的所得未達 50 萬元</th>
+      <td>勾選（假設已核對）</td>
+      <td>法定年度及口徑的財稅資料</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">扣除法定項目後，土地房屋價值未達 500 萬元</th>
+      <td>勾選（假設已核對）</td>
+      <td>承辦單位核對法定排除項目後的財產資料</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">同期間未領取其他政府生活補助或津貼</th>
+      <td>勾選（假設符合）</td>
+      <td>其他津貼資料與法定規定</td>
+    </tr>
+  
+    <tr>
+      <th scope="row">未領社會保險老年給付，或符合 87 年前加保例外</th>
+      <td>勾選（假設符合）</td>
+      <td>老年給付與例外條件審核資料</td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+      <p class="guide-formula">本例假設年資18年、年滿65歲，且所有法定條件及例外審查通過。
+本系統顯示全額津貼，不是年資 × 固定單價。</p>
+      <p class="guide-result">8,110 元／月（資格示意）</p>
+      <p>目前全額8,110元、半額4,055元。實際是否符合及申請起算月份以勞保局核定為準；本例不判定個人資格。</p>
+    </div>
+  </section>
+    <section>
+      <h2>常見填寫錯誤</h2><ul><li>看到範例全部勾選，就替客戶全部勾選。</li><li>以房屋市價直接判斷排富，而未核對法定計價與排除項目。</li><li>將農退儲金與老農津貼視為同一制度。</li></ul>
+      <h2>官方資料</h2><ul><li><a href="https://www.bli.gov.tw/0019439.html" target="_blank" rel="noopener noreferrer">勞保局｜老農津貼申請業務與現行金額</a></li><li><a href="https://www.bli.gov.tw/0102275.html" target="_blank" rel="noopener noreferrer">勞保局｜老農津貼請領條件</a></li></ul>
+    </section>
+  </article></div>
+<nav aria-label="選擇制度教學"><a href="#labor">勞保老年年金</a><a href="#national">國保老年年金</a><a href="#public">公保養老年金</a><a href="#military">軍保退伍給付</a><a href="#laborAccount">勞退新制月退</a><a href="#laborLegacy">勞退舊制</a><a href="#publicPension">公務／公校退撫</a><a href="#militaryPension">軍人退撫</a><a href="#privateSchoolPension">私校退撫</a><a href="#farmerAccount">農民退休儲金</a><a href="#farmerAllowance">老農津貼</a></nav>
+</main></body></html>
